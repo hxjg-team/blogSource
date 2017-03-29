@@ -19,6 +19,7 @@ script:
   - hexo g
 
 after_script:
+  - git pull
   - cd ./public
   - git init
   - git config user.name "hxjg"
